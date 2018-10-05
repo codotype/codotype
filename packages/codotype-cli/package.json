@@ -1,0 +1,22 @@
+{
+  "name": "blazeplate-cli",
+  "version": "0.1.0",
+  "description": "CLI for development with blazeplate.io",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blazeplate/blazeplate-cli.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/blazeplate/blazeplate-cli/issues"
+  },
+  "homepage": "https://github.com/blazeplate/blazeplate-cli#readme",
+  "dependencies": {
+    "caporal": "^0.10.0"
+  }
+}
