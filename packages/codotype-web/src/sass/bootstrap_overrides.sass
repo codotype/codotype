@@ -1,0 +1,207 @@
+// $white: #f3f3f3 !default
+// $light: #f3f3f3 !default
+// // $dark: #333333 !default
+// $dark: #4d4d4d !default // TODO - changed to be consistent with branding
+
+// // Required defaults - copied and pasted from Bootstrap variables
+// $white: #f3f3f3 !default
+// $gray-100: #f8f9fa !default;
+// $gray-200: #e9ecef !default;
+// $gray-300: #dee2e6 !default;
+// $gray-400: #ced4da !default;
+// $gray-500: #adb5bd !default;
+// $gray-600: #868e96 !default;
+// $gray-700: #495057 !default;
+// $gray-800: #333333 !default;
+// $gray-900: #212529 !default;
+// $black:    #000 !default;
+
+$border-width:                1px !default;
+
+$blue:    #4582EC !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #e83e8c !default;
+$red:     #d9534f !default;
+$orange:  #fd7e14 !default;
+$yellow:  #f0ad4e !default;
+$green:   #02B875 !default;
+$teal:    #20c997 !default;
+$cyan:    #17a2b8 !default;
+
+// //////////////
+
+// Bootstrap Variable Overrides
+// $body-bg: #f3f3f3 !default
+$body-bg: #f5f6f9 !default
+$font-weight-normal: 300 !default
+$enable-gradients: true
+$enable-shadows: true
+
+.shadow-hover
+  @extend .shadow-sm
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+
+  &:hover
+    @extend .shadow
+
+// TODO - enable dark/light theme switching
+
+// Dark theme
+// $body-bg: $dark
+// $body-color: $light
+// $brand-dark: $light
+// $brand-light: $dark
+// $card-bg: $dark
+// $breadcrumb-bg: $dark
+// $list-group-bg: $dark
+// $list-group-border-color: $gray-700
+
+// Light
+// $body-bg: $light
+// $body-color: $dark
+// $brand-dark: $dark
+// $brand-light: $light
+// $breadcrumb-bg: $light
+// $list-group-bg: $light
+// $list-group-border-color: $dark
+
+// $hr-border-color:             #999 !default;
+$hr-border-width:             $border-width !default;
+
+// $link-color: #9fceff !default;
+
+// /////////////
+
+// $primary:       $blue !default
+// $secondary:     $gray-700
+// $success:       $green !default
+// $info:          $cyan !default
+// $warning:       $yellow !default
+// $danger:        $red !default
+// $light:         $gray-800
+// $dark:          $gray-800 !default
+
+// Body
+
+// $body-bg:                   $gray-900
+// $body-color:                $white
+
+// Links
+
+// $link-color:                $success
+
+// Fonts
+
+// $font-family-sans-serif:      "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
+
+// $font-size-base:              0.9375rem
+
+// $h1-font-size:                $font-size-base * 2.5 !default
+// $h2-font-size:                $font-size-base * 2 !default
+// $h3-font-size:                $font-size-base * 1.75 !default
+// $h4-font-size:                $font-size-base * 1.5 !default
+// $h5-font-size:                $font-size-base * 1.25 !default
+// $h6-font-size:                $font-size-base !default
+
+// Tables
+
+// $table-accent-bg:             $gray-800
+
+// $table-border-color:          $gray-700
+
+// Forms
+
+// $input-border-color:         transparent
+
+// $input-group-addon-bg:                  $gray-700
+
+// Dropdowns
+
+// $dropdown-bg:                       $gray-900
+// $dropdown-border-color:             $gray-700
+// $dropdown-divider-bg:               $gray-700
+
+// $dropdown-link-color:               $gray-900
+// $dropdown-link-hover-color:         $white
+// $dropdown-link-hover-bg:            $primary
+
+// // Navs
+
+// $nav-link-padding-x:                2rem
+// $nav-link-disabled-color:           $gray-200
+
+// $nav-tabs-border-color:             $gray-700
+// $nav-tabs-link-hover-border-color:  $nav-tabs-border-color
+// $nav-tabs-link-active-border-color: $nav-tabs-border-color
+
+// Navbar
+$navbar-padding-y:                  1rem
+// $navbar-padding-y:                  1.5rem
+
+// $navbar-dark-color:                 $white
+// $navbar-dark-hover-color:           $success
+
+// Pagination
+
+// $pagination-color:                  $white
+// $pagination-bg:                     $success
+// $pagination-border-width:           0
+// $pagination-border-color:           transparent
+
+// $pagination-hover-color:            $white
+// $pagination-hover-bg:               lighten($success, 10%)
+// $pagination-hover-border-color:     transparent
+
+// $pagination-active-bg:              $pagination-hover-bg
+// $pagination-active-border-color:    transparent
+
+// $pagination-disabled-color:         $white
+// $pagination-disabled-bg:            darken($success, 15%)
+// $pagination-disabled-border-color:  transparentt
+
+
+// // Jumbotron
+
+// $jumbotron-bg:                      $gray-800
+
+// // Cards
+
+// $card-cap-bg:                       $gray-700
+// $card-bg:                           $gray-800
+
+// // Popovers
+
+// $popover-bg:                        $gray-800
+
+// $popover-header-bg:                 $gray-700
+
+// // Modals
+
+// $modal-content-bg:                  $gray-800
+// $modal-content-border-color:        $gray-700
+
+// $modal-header-border-color:         $gray-700
+
+// // Progress bars
+
+// $progress-height:                   10px
+// $progress-font-size:                10px
+// $progress-bg:                       $gray-700
+
+// // List group
+
+// $list-group-bg:                     $gray-800
+// $list-group-border-color:           $gray-700
+
+// $list-group-hover-bg:               $gray-700
+
+// // Breadcrumbs
+
+// $breadcrumb-bg:                     $gray-700
+
+// // Close
+
+// $close-color:                       $white
+// $close-text-shadow:                 none

@@ -1,0 +1,14 @@
+import {
+  COLLECTION_MUTATIONS,
+  SELECT_MODEL_MUTATIONS,
+  NEW_MODEL_MUTATIONS,
+  EDIT_MODEL_MUTATIONS
+} from '@/store/lib/mixins'
+
+// Relation Module mutations
+export default {
+  ...COLLECTION_MUTATIONS,
+  ...SELECT_MODEL_MUTATIONS,
+  ...NEW_MODEL_MUTATIONS,
+  ...EDIT_MODEL_MUTATIONS
+}
