@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+
+  blazeplate:
+    container_name: codotype_generator_api
+    build: ./
+    # restart_policy:
+      # condition: any
+      # delay: 5s
+    ports:
+      - "3000:3000"

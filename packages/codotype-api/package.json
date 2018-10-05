@@ -1,0 +1,30 @@
+{
+  "name": "codotype-api",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon -L ./server.js",
+    "test": "mocha --exit"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@codotype/generator": "^0.1.1",
+    "@codotype/runtime": "^0.3.0",
+    "archiver": "^2.1.1",
+    "aws-sdk": "^2.322.0",
+    "body-parser": "^1.18.2",
+    "bson-objectid": "^1.2.2",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.2",
+    "install": "^0.10.2",
+    "lodash": "^4.17.10",
+    "morgan": "^1.9.0",
+    "npm": "^5.6.0",
+    "serverless-http": "^1.6.0"
+  },
+  "devDependencies": {
+    "serverless-offline": "^3.25.10"
+  }
+}
