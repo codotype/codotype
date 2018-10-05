@@ -1,0 +1,241 @@
+{
+  "_id": "5b7a3e652c9b510912a4ad17",
+  "label": "Library",
+  "identifier": "library",
+  "schemas": [
+    {
+      "_id": "SCH_1",
+      "enabled": true,
+      "label": "User",
+      "label_plural": "Users",
+      "identifier": "user",
+      "identifier_plural": "users",
+      "class_name": "User",
+      "class_name_plural": "Users",
+      "attributes": [
+        {
+          "order": 0,
+          "label": "E-Mail",
+          "help": "E-Mail address associated with this Contact.",
+          "required": true,
+          "unique": true,
+          "datatype": "TEXT",
+          "datatypeOptions": {},
+          "identifier": "email",
+          "_id": "attr_26577092992831",
+          "locked": true
+        },
+        {
+          "order": 1,
+          "label": "Username",
+          "help": "The user's username",
+          "required": true,
+          "unique": true,
+          "datatype": "TEXT",
+          "datatypeOptions": {},
+          "identifier": "username",
+          "_id": "attr_265770dpskks31",
+          "locked": true
+        }
+      ],
+      "relations": [
+        {
+          "id": null,
+          "order": 1,
+          "type": "OWNS_MANY",
+          "required": false,
+          "related_schema_id": "5b7a3e702c9b510912a4ad19",
+          "reverse_relation_id": "5b7a3ea32c9b510912a4ad1f",
+          "as": "Checkout",
+          "_id": "5b7a3ea32c9b510912a4ad20"
+        }
+      ]
+    },
+    {
+      "_id": "5b7a3e6a2c9b510912a4ad18",
+      "label": "Book",
+      "label_plural": "Books",
+      "identifier": "book",
+      "identifier_plural": "books",
+      "class_name": "Book",
+      "class_name_plural": "Books",
+      "relations": [
+        {
+          "id": null,
+          "order": 0,
+          "type": "BELONGS_TO",
+          "required": false,
+          "related_schema_id": "5b7a3e752c9b510912a4ad1a",
+          "reverse_relation_id": "5b7a3e892c9b510912a4ad1c",
+          "as": "Author",
+          "_id": "5b7a3e892c9b510912a4ad1b"
+        },
+        {
+          "id": null,
+          "order": 2,
+          "type": "OWNS_MANY",
+          "required": false,
+          "related_schema_id": "5b7a3e702c9b510912a4ad19",
+          "reverse_relation_id": "5b7a3e992c9b510912a4ad1d",
+          "as": "Checkout",
+          "_id": "5b7a3e992c9b510912a4ad1e"
+        },
+        {
+          "id": null,
+          "order": 2,
+          "type": "BELONGS_TO",
+          "required": false,
+          "related_schema_id": "5b7a3ee72c9b510912a4ad23",
+          "reverse_relation_id": "5b7a3ef02c9b510912a4ad25",
+          "as": "Genre",
+          "_id": "5b7a3ef02c9b510912a4ad24"
+        }
+      ],
+      "attributes": [
+        {
+          "order": 0,
+          "label": "Title",
+          "identifier": "title",
+          "help": "",
+          "required": true,
+          "unique": true,
+          "datatype": "TEXT",
+          "datatypeOptions": {}
+        },
+        {
+          "order": 1,
+          "label": "ISBN",
+          "identifier": "isbn",
+          "help": "",
+          "required": false,
+          "unique": false,
+          "datatype": "TEXT",
+          "datatypeOptions": {},
+          "_id": "5b7a3f032c9b510912a4ad26"
+        }
+      ]
+    },
+    {
+      "_id": "5b7a3e702c9b510912a4ad19",
+      "label": "Checkout",
+      "label_plural": "Checkouts",
+      "identifier": "checkout",
+      "identifier_plural": "checkouts",
+      "class_name": "Checkout",
+      "class_name_plural": "Checkouts",
+      "relations": [
+        {
+          "id": null,
+          "order": 0,
+          "type": "BELONGS_TO",
+          "required": false,
+          "related_schema_id": "5b7a3e6a2c9b510912a4ad18",
+          "reverse_relation_id": "5b7a3e992c9b510912a4ad1e",
+          "as": "Book",
+          "_id": "5b7a3e992c9b510912a4ad1d"
+        },
+        {
+          "id": null,
+          "order": 1,
+          "type": "BELONGS_TO",
+          "required": false,
+          "related_schema_id": "SCH_1",
+          "reverse_relation_id": "5b7a3ea32c9b510912a4ad20",
+          "as": "User",
+          "_id": "5b7a3ea32c9b510912a4ad1f"
+        }
+      ],
+      "attributes": [
+        {
+          "order": 0,
+          "label": "Start Date",
+          "identifier": "start_date",
+          "help": "",
+          "required": false,
+          "unique": false,
+          "datatype": "DATE",
+          "datatypeOptions": {},
+          "_id": "5b7a3ecb2c9b510912a4ad22"
+        },
+        {
+          "order": 1,
+          "label": "End Date",
+          "identifier": "end_date",
+          "help": "",
+          "required": false,
+          "unique": false,
+          "datatype": "DATE",
+          "datatypeOptions": {},
+          "_id": "5b7a3ebe2c9b510912a4ad21"
+        }
+      ]
+    },
+    {
+      "_id": "5b7a3e752c9b510912a4ad1a",
+      "label": "Author",
+      "label_plural": "Authors",
+      "identifier": "author",
+      "identifier_plural": "authors",
+      "class_name": "Author",
+      "class_name_plural": "Authors",
+      "relations": [
+        {
+          "id": null,
+          "order": 1,
+          "type": "OWNS_MANY",
+          "required": false,
+          "related_schema_id": "5b7a3e6a2c9b510912a4ad18",
+          "reverse_relation_id": "5b7a3e892c9b510912a4ad1b",
+          "as": "Book",
+          "_id": "5b7a3e892c9b510912a4ad1c"
+        }
+      ],
+      "attributes": [
+        {
+          "order": 0,
+          "label": "Name",
+          "identifier": "name",
+          "help": "",
+          "required": true,
+          "unique": true,
+          "datatype": "TEXT",
+          "datatypeOptions": {}
+        }
+      ]
+    },
+    {
+      "_id": "5b7a3ee72c9b510912a4ad23",
+      "label": "Genre",
+      "label_plural": "Genres",
+      "identifier": "genre",
+      "identifier_plural": "genres",
+      "class_name": "Genre",
+      "class_name_plural": "Genres",
+      "relations": [
+        {
+          "id": null,
+          "order": 1,
+          "type": "OWNS_MANY",
+          "required": false,
+          "related_schema_id": "5b7a3e6a2c9b510912a4ad18",
+          "reverse_relation_id": "5b7a3ef02c9b510912a4ad24",
+          "as": "Book",
+          "_id": "5b7a3ef02c9b510912a4ad25"
+        }
+      ],
+      "attributes": [
+        {
+          "order": 0,
+          "label": "Label",
+          "identifier": "label",
+          "help": "",
+          "required": true,
+          "unique": true,
+          "datatype": "TEXT",
+          "datatypeOptions": {}
+        }
+      ]
+    }
+  ],
+  "seeds": []
+}

@@ -1,0 +1,217 @@
+{
+  "label": "Todo List",
+  "identifier": "todo_list",
+  "schemas": [
+    {
+      "_id": "SCH_7",
+      "enabled": true,
+      "label": "User",
+      "label_plural": "Users",
+      "identifier": "user",
+      "identifier_plural": "users",
+      "class_name": "User",
+      "class_name_plural": "Users",
+      "authentications": [],
+      "attributes": [
+        {
+          "order": 0,
+          "label": "E-Mail",
+          "help": "E-Mail address associated with this Contact.",
+          "required": true,
+          "unique": true,
+          "datatype": "TEXT",
+          "datatypeOptions": {},
+          "identifier": "email",
+          "_id": "attr_26577092992831",
+          "locked": true
+        },
+        {
+          "order": 1,
+          "label": "Username",
+          "help": "The user's username",
+          "required": true,
+          "unique": true,
+          "datatype": "TEXT",
+          "datatypeOptions": {},
+          "identifier": "username",
+          "_id": "attr_265770dpskks31",
+          "locked": true
+        },
+        {
+          "order": 2,
+          "label": "Name",
+          "help": "Name of the individual",
+          "required": true,
+          "unique": false,
+          "datatype": "TEXT",
+          "datatypeOptions": {},
+          "identifier": "name",
+          "_id": "attr_1",
+          "locked": true
+        },
+        {
+          "order": 3,
+          "label": "Password",
+          "help": "Encrypted user password for a user.",
+          "required": true,
+          "unique": false,
+          "datatype": "TEXT",
+          "datatypeOptions": {},
+          "identifier": "password",
+          "_id": "attr_265770929axy31",
+          "locked": true
+        },
+        {
+          "order": 4,
+          "label": "Admin",
+          "help": "Wether or not the user is an administrator",
+          "required": false,
+          "unique": false,
+          "datatype": "BOOL",
+          "datatypeOptions": {},
+          "identifier": "admin",
+          "_id": "attr_26577092d2ks31",
+          "locked": true
+        },
+        {
+          "order": 5,
+          "label": "Password Reset Token",
+          "help": "Encrypted password_reset_token for a user.",
+          "required": false,
+          "unique": false,
+          "datatype": "TEXT",
+          "datatypeOptions": {},
+          "identifier": "password_reset_token",
+          "_id": "attr_265770929jjs31",
+          "locked": true
+        }
+      ]
+    },
+    {
+      "_id": "5b26d2b77c4ee7e7270ec54e",
+      "label": "List",
+      "label_plural": "Lists",
+      "identifier": "list",
+      "identifier_plural": "lists",
+      "attributes": [
+        {
+          "order": 0,
+          "label": "Label",
+          "identifier": "label",
+          "help": "",
+          "required": true,
+          "unique": true,
+          "datatype": "TEXT",
+          "datatypeOptions": {}
+        },
+        {
+          "order": 2,
+          "label": "Tasks",
+          "identifier": "task_ids",
+          "help": "",
+          "required": false,
+          "unique": false,
+          "datatype": "RELATION",
+          "datatypeOptions": {
+            "relationType": "OWNS_MANY",
+            "schema_id": "5b26d2cd7c4ee7e7270ec54f",
+            "reverse_relation": "5b26d3047c4ee7e7270ec551"
+          },
+          "_id": "5b26d3047c4ee7e7270ec552",
+          "locked": true
+        }
+      ],
+      "display": {
+        "icon": "fa-square-o",
+        "navbar_link": true
+      },
+      "class_name": "List",
+      "class_name_plural": "Lists"
+    },
+    {
+      "_id": "5b26d2cd7c4ee7e7270ec54f",
+      "label": "Task",
+      "label_plural": "Tasks",
+      "identifier": "task",
+      "identifier_plural": "tasks",
+      "attributes": [
+        {
+          "order": 0,
+          "label": "Label",
+          "identifier": "label",
+          "help": "",
+          "required": true,
+          "unique": true,
+          "datatype": "TEXT",
+          "datatypeOptions": {}
+        },
+        {
+          "order": 1,
+          "label": "Done",
+          "identifier": "done",
+          "help": "",
+          "required": false,
+          "unique": false,
+          "datatype": "BOOL",
+          "datatypeOptions": {},
+          "_id": "5b26d2eb7c4ee7e7270ec550"
+        },
+        {
+          "order": 2,
+          "label": "List",
+          "identifier": "list_id",
+          "help": "",
+          "required": false,
+          "unique": false,
+          "datatype": "RELATION",
+          "datatypeOptions": {
+            "relationType": "BELONGS_TO",
+            "schema_id": "5b26d2b77c4ee7e7270ec54e",
+            "schema_attribute_identifier": "_id",
+            "reverse_relation": "5b26d3047c4ee7e7270ec552"
+          },
+          "_id": "5b26d3047c4ee7e7270ec551",
+          "locked": true
+        },
+        {
+          "order": 3,
+          "label": "Start",
+          "identifier": "start",
+          "help": "",
+          "required": false,
+          "unique": false,
+          "datatype": "DATETIME",
+          "datatypeOptions": {},
+          "_id": "5b27b65d16d50295dcc9b49a"
+        }
+      ],
+      "display": {
+        "icon": "fa-square-o",
+        "navbar_link": true
+      },
+      "class_name": "Task",
+      "class_name_plural": "Tasks"
+    }
+  ],
+  "seeds": [],
+  "stack": {
+    "server": {
+      "id": "flaskpy"
+    },
+    "client": {
+      "id": "reactjs"
+    },
+    "database": {
+      "id": "mongo"
+    },
+    "auth": {
+      "id": "email"
+    },
+    "ui_framework": {
+      "id": "bootstrap"
+    },
+    "features": [],
+    "deployments": []
+  },
+  "_id": "5b26d13843d8e811bc31b602"
+}
