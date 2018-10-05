@@ -1,0 +1,19 @@
+{
+  "name": "@codotype/blueprints",
+  "version": "0.1.0",
+  "description": "Example Blueprints for generating apps with Codotype",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codotype/codotype-blueprints.git"
+  },
+  "author": "Alexander Schwartzberg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codotype/codotype-blueprints/issues"
+  },
+  "homepage": "https://github.com/codotype/codotype-blueprints#readme"
+}

@@ -1,0 +1,114 @@
+{
+  "id": "5bb6a7479c598b4b512bed7d",
+  "label": "Team Lists",
+  "identifier": "team_lists",
+  "schemas": [
+    {
+      "_id": "SCH_1",
+      "enabled": true,
+      "label": "User",
+      "label_plural": "Users",
+      "identifier": "user",
+      "identifier_plural": "users",
+      "class_name": "User",
+      "class_name_plural": "Users",
+      "attributes": [
+        {
+          "order": 0,
+          "label": "E-Mail",
+          "help": "E-Mail address associated with this Contact.",
+          "required": true,
+          "unique": true,
+          "datatype": "TEXT",
+          "datatypeOptions": {},
+          "identifier": "email",
+          "_id": "attr_26577092992831",
+          "locked": true
+        },
+        {
+          "order": 1,
+          "label": "Username",
+          "help": "The user's username",
+          "required": true,
+          "unique": true,
+          "datatype": "TEXT",
+          "datatypeOptions": {},
+          "identifier": "username",
+          "_id": "attr_265770dpskks31",
+          "locked": true
+        }
+      ],
+      "relations": []
+    },
+    {
+      "_id": "5bb6a7ae9c598b4b512bed7e",
+      "label": "List",
+      "label_plural": "Lists",
+      "identifier": "list",
+      "identifier_plural": "lists",
+      "class_name": "List",
+      "class_name_plural": "Lists",
+      "relations": [
+        {
+          "id": null,
+          "order": 0,
+          "type": "HAS_ONE",
+          "required": false,
+          "generate_reverse": true,
+          "related_schema_id": "SCH_1",
+          "reverse_relation_id": "",
+          "as": "",
+          "reverse_as": "",
+          "_id": "5bb6a7d59c598b4b512bed80"
+        }
+      ],
+      "attributes": [
+        {
+          "order": 0,
+          "label": "Label",
+          "identifier": "label",
+          "help": "",
+          "required": true,
+          "unique": true,
+          "datatype": "TEXT",
+          "datatypeOptions": {}
+        }
+      ]
+    },
+    {
+      "_id": "5bb6a7b89c598b4b512bed7f",
+      "label": "Issue",
+      "label_plural": "Issues",
+      "identifier": "issue",
+      "identifier_plural": "issues",
+      "class_name": "Issue",
+      "class_name_plural": "Issues",
+      "relations": [
+        {
+          "id": null,
+          "order": 0,
+          "type": "BELONGS_TO",
+          "required": false,
+          "generate_reverse": true,
+          "related_schema_id": "5bb6a7ae9c598b4b512bed7e",
+          "reverse_relation_id": "",
+          "as": "",
+          "reverse_as": "",
+          "_id": "5bb6a7f19c598b4b512bed81"
+        }
+      ],
+      "attributes": [
+        {
+          "order": 0,
+          "label": "Label",
+          "identifier": "label",
+          "help": "",
+          "required": true,
+          "unique": true,
+          "datatype": "TEXT",
+          "datatypeOptions": {}
+        }
+      ]
+    }
+  ]
+}
