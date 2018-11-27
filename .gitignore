@@ -20,5 +20,22 @@ build/**/*
 *.njsproj
 *.sln
 
-packages/**/*
 !packages/.gitkeep
+packages/web
+packages/codotype-api
+packages/codotype-blueprints
+packages/codotype-cli
+packages/codotype-express-vue-fullstack-generator
+packages/codotype-generator
+packages/codotype-generator-nuxt
+packages/codotype-hackathon-starter
+packages/codotype-mongodb-dataworker
+packages/codotype-nodejs-express-mongodb-generator
+packages/codotype-postman-collection-generator
+packages/codotype-python-falcon-mongodb-generator
+packages/codotype-react-generator
+packages/codotype-runtime
+packages/codotype-util
+packages/codotype-vue-fullstack-node-generator
+packages/codotype-vuejs-vuex-bootstrap-generator
+packages/codotype-vuejs-vuex-onsenui-generator
