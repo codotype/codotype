@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "description": "UI components for building apps Codotype",
   "author": "Alexander Schwartzberg <aeksco@gmail.com>",
-  "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
     "start": "npm run dev",
