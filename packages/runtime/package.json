@@ -1,0 +1,31 @@
+{
+  "name": "@codotype/runtime",
+  "version": "0.5.0",
+  "description": "Runtime environment that registers and runs Codotype generators",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codotype/codotype-runtime.git"
+  },
+  "author": "Alexander Schwartzberg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codotype/codotype-runtime/issues"
+  },
+  "homepage": "https://github.com/codotype/codotype-runtime#readme",
+  "dependencies": {
+    "@codotype/generator": "^0.4.0",
+    "@codotype/util": "^0.3.0",
+    "bluebird": "^3.5.1",
+    "fs-extra": "^7.0.1"
+  },
+  "devDependencies": {
+    "@codotype/blueprints": "^0.1.0"
+  },
+  "directories": {
+    "lib": "lib"
+  }
+}
