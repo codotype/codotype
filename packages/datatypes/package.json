@@ -1,0 +1,12 @@
+{
+  "name": "@codotype/types",
+  "version": "0.1.0",
+  "description": "Datatype definitions that power Codotype",
+  "main": "index.js",
+  "homepage": "https://github.com/codotype/codotype#readme",
+  "directories": {
+    "lib": "lib"
+  },
+  "author": "Alexander Schwartzberg",
+  "license": "MIT"
+}
