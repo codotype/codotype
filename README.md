@@ -18,11 +18,11 @@ lerna bootstrap
   - @codotype/util
   - @codotype/generator
   - @codotype/runtime
-  - @codotype/blueprints
   - @codotype/ui
-  - @codotype/web
+  - @codotype/blueprints (?)
 
 Manage the following in separate repositories
   - @codotype/cli (?)
   - @codotype/api (?)
+  - @codotype/web
   - All generators (express-vue, nuxt, hackathon-starter, mongodb-dataworker, node-express, postman, react, vue+bootstrap, vue+onsen)
