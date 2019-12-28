@@ -84,21 +84,21 @@
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/@codotype/blueprints/-/blueprints-0.4.0.tgz#d14e604bf244b7688a7e3f8df6707c140bb28665"
 
-"@codotype/generator@^0.5.0":
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/@codotype/generator/-/generator-0.5.0.tgz#a0d0617c496ac5ed616ccdbe9253b47fac2401f3"
+"@codotype/generator@^0.6.0":
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/@codotype/generator/-/generator-0.6.0.tgz#5e533763b74960b567fe9096c3baad417f5ceab1"
   dependencies:
-    "@codotype/util" "^0.4.0"
+    "@codotype/util" "^0.4.1"
 
-"@codotype/types@^0.1.0":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@codotype/types/-/types-0.1.1.tgz#5ee69c0ff591653e25e2bd53d77de7ab3375282d"
+"@codotype/types@^0.2.1", "@codotype/types@^0.2.2":
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/@codotype/types/-/types-0.2.3.tgz#d1194e1dc90efb2c2c13efece068aaab43ad2af1"
 
-"@codotype/util@^0.4.0":
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/@codotype/util/-/util-0.4.0.tgz#7363bf4485e9e7e00e6ae5dd82113a1eb574e32b"
+"@codotype/util@^0.4.1":
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/@codotype/util/-/util-0.4.2.tgz#d2ce2f7e87f460c5a40d5b8d139a64723abe319e"
   dependencies:
-    "@codotype/types" "^0.1.0"
+    "@codotype/types" "^0.2.2"
     lodash "^4.17.10"
     pluralize "^7.0.0"
     underscore.string "^3.3.4"
@@ -216,9 +216,9 @@ commander@2.15.1:
   version "2.15.1"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.15.1.tgz#df46e867d0fc2aec66a34662b406a9ccafff5b0f"
 
-commander@~2.19.0:
-  version "2.19.0"
-  resolved "https://registry.yarnpkg.com/commander/-/commander-2.19.0.tgz#f6198aa84e5b83c46054b94ddedbfed5ee9ff12a"
+commander@~2.20.3:
+  version "2.20.3"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-2.20.3.tgz#fd485e84c03eb4881c20722ba48035e8531aeb33"
 
 commondir@^1.0.1:
   version "1.0.1"
@@ -405,8 +405,8 @@ growl@1.10.5:
   resolved "https://registry.yarnpkg.com/growl/-/growl-1.10.5.tgz#f2735dc2283674fa67478b10181059355c369e5e"
 
 handlebars@^4.1.0:
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/handlebars/-/handlebars-4.1.1.tgz#6e4e41c18ebe7719ae4d38e5aca3d32fa3dd23d3"
+  version "4.5.3"
+  resolved "https://registry.yarnpkg.com/handlebars/-/handlebars-4.5.3.tgz#5cf75bd8714f7605713511a56be7c349becb0482"
   dependencies:
     neo-async "^2.6.0"
     optimist "^0.6.1"
@@ -656,8 +656,8 @@ ms@^2.1.1:
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.1.tgz#30a5864eb3ebb0a66f2ebe6d727af06a09d86e0a"
 
 neo-async@^2.6.0:
-  version "2.6.0"
-  resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.0.tgz#b9d15e4d71c6762908654b5183ed38b753340835"
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.1.tgz#ac27ada66167fa8849a6addd837f6b189ad2081c"
 
 nice-try@^1.0.4:
   version "1.0.5"
@@ -1026,10 +1026,10 @@ type-detect@^4.0.0, type-detect@^4.0.5:
   resolved "https://registry.yarnpkg.com/type-detect/-/type-detect-4.0.8.tgz#7646fb5f18871cfbb7749e69bd39a6388eb7450c"
 
 uglify-js@^3.1.4:
-  version "3.5.2"
-  resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.5.2.tgz#dc0c7ac2da0a4b7d15e84266818ff30e82529474"
+  version "3.7.3"
+  resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.7.3.tgz#f918fce9182f466d5140f24bb0ff35c2d32dcc6a"
   dependencies:
-    commander "~2.19.0"
+    commander "~2.20.3"
     source-map "~0.6.1"
 
 underscore.string@^3.3.4:
