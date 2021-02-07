@@ -23,8 +23,10 @@ export function RelationFormModal(props: {
 
     return (
         <Modal show={props.show} onHide={props.onCancel}>
-            <h3>{title}</h3>
-            {props.children}
+            <div className="p-5">
+                <h3 className="text-xl">{title}</h3>
+                {props.children}
+            </div>
             <div className="modal-footer-tw">
                 <button
                     disabled={props.disableSubmit}

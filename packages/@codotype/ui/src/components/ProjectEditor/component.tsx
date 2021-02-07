@@ -11,6 +11,7 @@ interface ProjectEditorProps {
     onChange: (updatedProject: ProjectInput) => void;
     onClickGenerate: () => void;
     onResetProject: () => void;
+    children?: (childProps: any) => React.ReactNode;
 }
 
 export function ProjectEditor(props: ProjectEditorProps) {
@@ -35,6 +36,7 @@ export function ProjectEditor(props: ProjectEditorProps) {
                 <ConfigurationGroupSelector
                     projectInput={projectInput}
                     pluginMetadata={plugin}
+                    children={props.children}
                     onChange={(updatedProject: ProjectInput) => {
                         // Invokes props.onChange with the updated project
                         props.onChange(updatedProject);

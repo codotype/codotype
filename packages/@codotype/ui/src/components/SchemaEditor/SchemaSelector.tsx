@@ -22,7 +22,7 @@ export function SchemaSelectorItem(props: {
             {(provided, snapshot) => (
                 <li
                     className={classnames(
-                        "cursor-pointer bg-white hover:bg-gray-200 border-l-8 py-4 px-4",
+                        "cursor-pointer bg-white dark:bg-gray-900 dark:text-gray-200 select-none hover:bg-gray-200 border-l-8 py-4 px-4",
                         {
                             "text-gray-900 font-semibold border-indigo-500":
                                 props.selected,

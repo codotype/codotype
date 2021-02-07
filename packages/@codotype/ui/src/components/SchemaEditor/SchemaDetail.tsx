@@ -52,7 +52,6 @@ export function SchemaDetail(props: SchemaDetailProps) {
                 <SchemaDetailHeader
                     projectInput={props.projectInput}
                     schemaInput={props.schema}
-                    schemas={props.projectInput.schemas}
                     onClickEdit={props.onClickEdit}
                     onConfirmDelete={props.onConfirmDelete}
                 />

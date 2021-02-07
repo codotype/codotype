@@ -78,8 +78,8 @@ export function RelationPropertiesForm(props: RelationPropertiesFormProps) {
 
     return (
         <React.Fragment>
-            <div className="row">
-                <div className="col-lg-4">
+            <div className="grid grid-cols-12 gap-4">
+                <div className="col-span-4">
                     <div className="mb-0 text-blue-500 text-center">
                         <label className="mb-0">
                             {schema.identifiers.singular.title}
@@ -95,9 +95,9 @@ export function RelationPropertiesForm(props: RelationPropertiesFormProps) {
                     </div>
                 </div>
 
-                <div className="col-lg-4">
-                    <div className="row">
-                        <div className="col-lg-12">
+                <div className="col-span-4">
+                    <div className="grid grid-cols-12 gap-4">
+                        <div className="col-span-12">
                             <div className="mb-0 text-center mb-0">
                                 <label className="mb-0">
                                     {RELATION_META[relationInput.type].label}
@@ -112,8 +112,8 @@ export function RelationPropertiesForm(props: RelationPropertiesFormProps) {
                         </div>
                     </div>
 
-                    <div className="row">
-                        <div className="col-lg-12">
+                    <div className="grud grid-cols-12 gap-4">
+                        <div className="col-span-12">
                             <RelationDatatypeForm
                                 type={relationInput.type}
                                 supportedRelationTypes={supportedRelationTypes}
@@ -130,9 +130,11 @@ export function RelationPropertiesForm(props: RelationPropertiesFormProps) {
                     </div>
                 </div>
 
-                <div className="col-lg-4">
+                <div className="col-span-4">
                     <div className="mb-0 text-center">
-                        <label className="mb-0 text-teal-500">Related Schema</label>
+                        <label className="mb-0 text-teal-500">
+                            Related Schema
+                        </label>
                         <small className="form-text text-teal-500">
                             Schema referenced by this relation
                         </small>
@@ -158,8 +160,8 @@ export function RelationPropertiesForm(props: RelationPropertiesFormProps) {
                     </div>
                 </div>
             </div>
-            <div className="row">
-                <div className="col-sm-4">
+            <div className="grid grid-cols-12 gap-4">
+                <div className="col-span-4">
                     <input
                         className="form-control"
                         placeholder="Source Schema Alias"
@@ -175,10 +177,10 @@ export function RelationPropertiesForm(props: RelationPropertiesFormProps) {
                     />
                 </div>
                 <div
-                    className="col-sm-4 text-center"
+                    className="col-span-4 text-center"
                     style={{ visibility: "hidden" }}
                 />
-                <div className="col-sm-4">
+                <div className="col-span-4">
                     <input
                         className="form-control"
                         placeholder="Destination Schema Alias"
@@ -195,11 +197,11 @@ export function RelationPropertiesForm(props: RelationPropertiesFormProps) {
                 </div>
             </div>
             {destinationSchema !== undefined && (
-                <div className="row">
-                    <div className="col-lg-12">
+                <div className="grid grid-cols-1 gap-4">
+                    <div className="col-span-1">
                         <hr />
                     </div>
-                    <div className="col-lg-12 text-center">
+                    <div className="col-span-1 text-center">
                         <RelationBadge
                             direction="out"
                             relation={buildRelation({

@@ -63,7 +63,7 @@ export function SchemaPreview(props: {
             </div> */}
             <div className="col-lg-12">
                 <div
-                    className="rounded-xl bg-gray-900"
+                    className="rounded-xl bg-gray-900 dark:border-gray-800"
                     style={{ overflow: "hidden" }}
                 >
                     <pre
@@ -75,7 +75,7 @@ export function SchemaPreview(props: {
                         </small>
                     </pre>
 
-                    <div className="flex flex-row items-center border-blue-500 border-t-2">
+                    <div className="flex flex-row items-center border-indigo-500 border-t-2">
                         <div className="flex flex-col flex-grow">
                             <select
                                 value={previewOutputType}

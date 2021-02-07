@@ -64,8 +64,10 @@ export function SchemaDeleteButton(props: {
             tooltipContent={
                 <React.Fragment>
                     Remove the&nbsp;
-                    <strong>{schemaInput.identifiers.singular.title}</strong>
-                    &nbsp;Schema.
+                    <span className="text-semibold">
+                        {schemaInput.identifiers.singular.title}
+                    </span>
+                    &nbsp;Data Model.
                 </React.Fragment>
             }
         >

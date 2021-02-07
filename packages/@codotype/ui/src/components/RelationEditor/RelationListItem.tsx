@@ -55,7 +55,7 @@ export function RelationListItem(props: {
         <Draggable draggableId={String(relation.id)} index={props.index}>
             {provided => (
                 <li
-                    className="cursor-pointer flex justify-between group bg-white hover:bg-gray-200 border-indigo-500 border-l-4 py-2 px-2 text-gray-900 font-light"
+                    className="cursor-pointer flex justify-between group bg-white dark:bg-gray-900 dark:text-gray-200 hover:bg-gray-200 border-indigo-500 border-l-4 py-2 px-2 text-gray-900 font-light"
                     ref={provided.innerRef}
                     onClick={() => {
                         // Don't allow editing if Attribute.locked is true

@@ -102,7 +102,6 @@
         "@welldone-software/why-did-you-render": "^6.0.3",
         "axios": "^0.19.2",
         "axios-hooks": "^1.10.0",
-        "bootstrap": "^4.4.1",
         "classnames": "^2.2.6",
         "copy-to-clipboard": "^3.3.1",
         "downloadjs": "^1.4.7",

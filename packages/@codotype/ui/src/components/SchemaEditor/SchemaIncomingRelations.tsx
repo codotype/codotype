@@ -50,9 +50,8 @@ export function SchemaIncomingRelations(props: SchemaIncomingRelationsProps) {
                     {inflatedSchema.referencedBy.map(r => {
                         return (
                             <li
-                                className="list-group-item px-2 border border-gray-500"
-                                style={{ cursor: "pointer" }}
                                 key={r.id}
+                                className="cursor-pointer flex justify-between group bg-white dark:bg-gray-900 dark:text-gray-200 hover:bg-gray-200 py-2 px-2 text-gray-900 font-light"
                                 onClick={() => {
                                     props.onSelectSchema(r.sourceSchemaID);
                                 }}

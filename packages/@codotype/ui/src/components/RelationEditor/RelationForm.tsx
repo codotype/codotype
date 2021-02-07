@@ -44,8 +44,8 @@ export function RelationForm(props: RelationFormProps) {
         ).length > 0;
 
     return (
-        <div className="row">
-            <div className="col-lg-12">
+        <div className="grid grid-cols-1">
+            <div className="col-span-1">
                 <RelationPropertiesForm
                     relationInput={props.relationInput}
                     supportedRelationTypes={props.supportedRelationTypes}
@@ -61,7 +61,7 @@ export function RelationForm(props: RelationFormProps) {
                 />
             </div>
             {hasRelationAddons && (
-                <div className="col-lg-12">
+                <div className="col-span-1">
                     <hr />
                     <RelationAddonForm
                         relationInput={relationInput}

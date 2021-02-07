@@ -64,7 +64,7 @@ export function Tooltip(props: {
             onMouseLeave={handleMouseLeave}
         >
             <div
-                className="absolute whitespace-no-wrap bg-gray-800 text-white px-4 py-2 rounded-lg flex items-center z-50"
+                className="absolute whitespace-no-wrap bg-gray-800 text-white px-4 py-2 rounded-lg flex items-center z-50 flex-grow"
                 style={wrapperStyle}
             >
                 {position === "right" && (

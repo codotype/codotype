@@ -68,7 +68,7 @@ export function Modal(props: {
             To: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
         --> */}
                 <div
-                    className="inline-block align-bottom bg-white rounded-2xl text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full"
+                    className="inline-block align-bottom bg-white dark:bg-gray-800 dark:text-gray-200 rounded-2xl text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full"
                     role="dialog"
                     aria-modal="true"
                     aria-labelledby="modal-headline"

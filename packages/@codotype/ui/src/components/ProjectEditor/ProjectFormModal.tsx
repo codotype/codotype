@@ -29,7 +29,7 @@ export function ProjectFormModal(props: {
                     onClick={props.onSubmit}
                     disabled={props.disabled}
                 >
-                    Update Project
+                    Update Project Name
                 </button>
                 <button
                     className="btn btn-lg btn-light bg-white"

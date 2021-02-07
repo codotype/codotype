@@ -27,8 +27,11 @@ export function PluginStart(props: PluginStartProps) {
             <div className="flex flex-col">
                 <div className="flex flex-col">
                     <div className="flex flex-col items-center">
-                        <img src={props.plugin.content.icon} />
-                        <h3 className="text-xl mt-3">
+                        <img
+                            className="max-h-32"
+                            src={props.plugin.content.icon}
+                        />
+                        <h3 className="text-3xl mt-3">
                             {props.plugin.content.label}
                         </h3>
                         <p className="lead text-gray-600">

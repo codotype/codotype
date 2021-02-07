@@ -340,7 +340,7 @@ export function SchemaEditorLayout(props: {
                 </DragDropContext>
             </div>
             <div className="col-span-8 pl-3 lg:pl-0 mt-4 lg:mt-0">
-                <div className="card card-body shadow-xl">
+                <div className="card card-body shadow">
                     <SchemaDetail
                         schema={selectedSchema}
                         projectInput={props.projectInput}
@@ -398,9 +398,6 @@ export function SchemaEditorLayout(props: {
                                     );
                                 },
                             );
-
-                            console.log("updatedRelations");
-                            console.log(updatedRelations);
 
                             // Updates state
                             props.onChange({

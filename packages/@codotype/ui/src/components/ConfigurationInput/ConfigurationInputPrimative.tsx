@@ -119,7 +119,7 @@ export function ConfigurationInputPrimative(
                 // onHandleColor={}
                 // offHandleColor={}
                 offColor={"#888"}
-                onColor={"#4582ec"}
+                onColor={"#6366F1"}
                 checkedIcon={false}
                 uncheckedIcon={false}
                 onChange={(updatedChecked: boolean) => {

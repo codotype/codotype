@@ -31,7 +31,7 @@ export function ImageBlock(props: { alt: string; src: string }) {
  */
 export function MarkdownRenderer(props: { source: string }) {
     return (
-        <div>
+        <div className="markdown-body">
             <ReactMarkdown
                 skipHtml
                 source={props.source}

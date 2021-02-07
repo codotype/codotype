@@ -107,13 +107,9 @@ export function ConfigurationInputFormGroup(
     const formGroupHeader = (
         <div className="flex items-center">
             {property.content.icon && (
-                <img
-                    src={property.content.icon}
-                    style={{ maxWidth: "2rem" }}
-                    className="mr-3"
-                />
+                <img src={property.content.icon} className="mr-3 max-h-8" />
             )}
-            <label className="mb-0">{property.content.label}</label>
+            <label className="mb-0 text-lg">{property.content.label}</label>
             {renderDocumentationModal && (
                 <small className="mx-3">
                     <DocumentationModal
@@ -129,16 +125,16 @@ export function ConfigurationInputFormGroup(
         <React.Fragment>
             {/* Render description IFF not empty */}
             {property.content.description !== "" && (
-                <small className="d-block mt-3 text-muted">
+                <p className="d-block mt-3 text-muted">
                     {property.content.description}
-                </small>
+                </p>
             )}
 
             {/* Render empty description warning */}
             {property.content.description === "" && (
-                <small className="d-block mt-3 mb-3 text-red-500">
+                <p className="d-block mt-4 mb-3 text-red-500">
                     Warning - this input needs a description
-                </small>
+                </p>
             )}
         </React.Fragment>
     );
@@ -223,7 +219,9 @@ export function ConfigurationInputFormGroup(
     // Handle renderInCard
     return (
         <div className={`col-span-${colSpan}`}>
-            <div className="card shadow-sm my-3 py-3 px-3">{formGroup}</div>
+            <div className="card card-body shadow-sm my-2 py-3 px-3">
+                {formGroup}
+            </div>
         </div>
     );
 }

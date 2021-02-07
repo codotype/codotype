@@ -56,6 +56,7 @@ export function ConfigurationGroupSelector(props: {
     projectInput: ProjectInput;
     pluginMetadata: PluginMetadata;
     onChange: (updatedProject: ProjectInput) => void;
+    children?: (childProps: any) => React.ReactNode;
 }) {
     const { pluginMetadata } = props;
     // Gets default ConfigurationGroup to render
@@ -92,6 +93,31 @@ export function ConfigurationGroupSelector(props: {
 
     // NOTE - enable/disable this if schemas aren't supported
     const [viewingReadme, setViewingReadme] = React.useState<boolean>(false);
+
+    // Defines default component for ConfigurationInput
+    const defaultComponent = (
+        <ConfigurationInput
+            configurationGroup={selectedConfigurationGroup}
+            value={
+                props.projectInput.configuration[
+                    selectedConfigurationGroup.identifier
+                ]
+            }
+            onChange={(updatedVal: ConfigurationPropertyDict) => {
+                // Defines updatd project with latest configuration value
+                const updatedProject: ProjectInput = {
+                    ...props.projectInput,
+                    configuration: {
+                        ...props.projectInput.configuration,
+                        [selectedConfigurationGroup.identifier]: updatedVal,
+                    },
+                };
+
+                // Invokes props.onChange with updated project
+                props.onChange(updatedProject);
+            }}
+        />
+    );
 
     return (
         <div className="row">
@@ -145,29 +171,39 @@ export function ConfigurationGroupSelector(props: {
                 </div>
             </div>
             <div className="col-lg-12">
-                {/* Renders the ConfigurationInput */}
-                {!viewingSchemas && !viewingReadme && (
-                    <ConfigurationInput
-                        configurationGroup={selectedConfigurationGroup}
-                        value={
-                            props.projectInput.configuration[
-                                selectedConfigurationGroup.identifier
-                            ]
-                        }
-                        onChange={(updatedVal: ConfigurationPropertyDict) => {
-                            // Defines updatd project with latest configuration value
-                            const updatedProject: ProjectInput = {
-                                ...props.projectInput,
-                                configuration: {
-                                    ...props.projectInput.configuration,
-                                    [selectedConfigurationGroup.identifier]: updatedVal,
-                                },
-                            };
+                {!viewingSchemas &&
+                    !viewingReadme &&
+                    props.children !== undefined && (
+                        <>
+                            {props.children({
+                                defaultComponent,
+                                selectedConfigurationGroup,
+                                value:
+                                    props.projectInput.configuration[
+                                        selectedConfigurationGroup.identifier
+                                    ],
+                                onChange: (
+                                    updatedVal: ConfigurationPropertyDict,
+                                ) => {
+                                    // Defines updatd project with latest configuration value
+                                    const updatedProject: ProjectInput = {
+                                        ...props.projectInput,
+                                        configuration: {
+                                            ...props.projectInput.configuration,
+                                            [selectedConfigurationGroup.identifier]: updatedVal,
+                                        },
+                                    };
 
-                            // Invokes props.onChange with updated project
-                            props.onChange(updatedProject);
-                        }}
-                    />
+                                    // Invokes props.onChange with updated project
+                                    props.onChange(updatedProject);
+                                },
+                            })}
+                        </>
+                    )}
+
+                {/* Renders the ConfigurationInput */}
+                {!viewingSchemas && !viewingReadme && !props.children && (
+                    <>{defaultComponent}</>
                 )}
 
                 {/* Render README tab */}

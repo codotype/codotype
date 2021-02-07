@@ -27,7 +27,7 @@ export function SortableListHeader(props: SortableListHeaderProps) {
                 className={classnames(
                     "bg-indigo-500 hover:bg-indigo-600 text-white px-3 py-2 text-lg w-full",
                     {
-                        "rounded-tl-lg rounded-tr-lg": rounded,
+                        "rounded-tl-2xl rounded-tr-2xl": rounded,
                     },
                 )}
                 onClick={e => {

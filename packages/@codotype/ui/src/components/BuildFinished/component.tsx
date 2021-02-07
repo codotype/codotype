@@ -157,7 +157,7 @@ export function BuildFinished(props: {
                         >
                             GitHub
                         </a>{" "}
-                        or follow us on{" "}
+                        and follow us on{" "}
                         <a
                             href="https://twitter.com/codotype"
                             target="_blank"

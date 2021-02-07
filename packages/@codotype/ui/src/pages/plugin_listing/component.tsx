@@ -80,33 +80,26 @@ export function PluginListPage(props: { plugins: PluginMetadata[] }) {
                     </div>
 
                     <div className="col-lg-12">
-                        <div className="card py-4 my-3 border-gray-800 bg-transparent">
-                            <ul className="list-group rounded-none">
-                                <li className="list-group-item text-center bg-transparent border-gray-800 text-gray-800">
-                                    <FontAwesomeIcon
-                                        size="2x"
-                                        icon={faInfoCircle}
-                                    />
-                                    <p className="lead mb-0 mt-2">
-                                        Looking for something we don't support?
-                                        <br />
-                                        Vote for&nbsp;
-                                        <a
-                                            href="https://github.com/codotype/feature-requests/issues"
-                                            target="_blank"
-                                        >
-                                            upcoming features
-                                        </a>
-                                        &nbsp;or open a&nbsp;
-                                        <a
-                                            href="https://github.com/codotype/feature-requests/issues/new"
-                                            target="_blank"
-                                        >
-                                            new request
-                                        </a>
-                                    </p>
-                                </li>
-                            </ul>
+                        <div className="card card-body">
+                            <FontAwesomeIcon size="2x" icon={faInfoCircle} />
+                            <p className="lead mb-0 mt-2">
+                                Looking for something we don't support?
+                                <br />
+                                Vote for&nbsp;
+                                <a
+                                    href="https://github.com/codotype/feature-requests/issues"
+                                    target="_blank"
+                                >
+                                    upcoming features
+                                </a>
+                                &nbsp;or open a&nbsp;
+                                <a
+                                    href="https://github.com/codotype/feature-requests/issues/new"
+                                    target="_blank"
+                                >
+                                    new request
+                                </a>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -114,20 +107,3 @@ export function PluginListPage(props: { plugins: PluginMetadata[] }) {
         </div>
     );
 }
-
-// Animating items on remove
-// <style type="text/css">
-//   .plugin-list-item {
-//     transition: all 1s;
-//     display: inline-block;
-//     margin-right: 10px;
-//   }
-
-//   .plugin-list-enter, .plugin-list-leave-to {
-//     opacity: 0;
-//     transform: translateY(30px);
-//   }
-//   .plugin-list-leave-active {
-//     position: absolute;
-//   }
-// </style>

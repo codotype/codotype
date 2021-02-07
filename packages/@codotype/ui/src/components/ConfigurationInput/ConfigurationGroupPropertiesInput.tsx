@@ -31,7 +31,7 @@ export function ConfigurationGroupPropertiesInput(props: {
         props.properties || configurationGroup.properties;
 
     return (
-        <div className="row">
+        <div className="grid grid-cols-12">
             {properties.map((property: ConfigurationProperty) => {
                 // Handle PropertyTypes.COLLECTION
                 if (property.type === PropertyTypes.COLLECTION) {

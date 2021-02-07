@@ -34,13 +34,13 @@ export function ConfigurationGroupPropertiesDocs(props: {
     }
 
     return (
-        <div className="row">
-            <div className={`col-lg-${docsColumn} border-right`}>
+        <div className="grid grid-cols-12 gap-4">
+            <div className={`col-span-${docsColumn} border-right`}>
                 <MarkdownRenderer
                     source={configurationGroup.content.documentation}
                 />
             </div>
-            <div className={`col-lg-${inputsColumn}`}>
+            <div className={`col-span-${inputsColumn}`}>
                 <div className="row">
                     <div className="col-lg-12">
                         <ConfigurationGroupPropertiesInput

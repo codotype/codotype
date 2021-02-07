@@ -70,8 +70,8 @@ export function ConfigurationInput(props: ConfigurationInputProps) {
 
     // Handle ConfigurationGroup.allowDisable
     return (
-        <div className="row mt-4">
-            <div className="col-lg-12">
+        <div className="grid grid-cols-12 mt-4">
+            <div className="col-span-12">
                 {/* ConfigurationGroupHeader */}
                 <ConfigurationGroupHeader
                     value={value}
@@ -83,9 +83,8 @@ export function ConfigurationInput(props: ConfigurationInputProps) {
                 {/* Renders message to turn this feature on */}
                 {configurationGroup.allowDisable && !value.enabled && (
                     <ToggleEnabled
+                        enabled={value.enabled as boolean}
                         configurationGroup={configurationGroup}
-                        // @ts-ignore
-                        checked={value.enabled}
                         onChange={updatedEnabled => {
                             const updatedValue = {
                                 ...value,
