@@ -108,7 +108,7 @@
         "downloadjs": "^1.4.7",
         "github-buttons": "^2.14.0",
         "lodash.sample": "^4.0.1",
-        "next": "11",
+        "next": "12",
         "react-beautiful-dnd": "^13.0.0",
         "react-bootstrap": "^1.0.0-beta.17",
         "react-error-boundary": "^2.2.1",
