@@ -198,9 +198,9 @@
     minimist "^1.2.0"
 
 "@codotype/core@^0.8.0-canary.18":
-  version "0.8.0-canary.18"
-  resolved "https://registry.yarnpkg.com/@codotype/core/-/core-0.8.0-canary.18.tgz#83389f9fa8b528f71c35e9048dcdf35fda2a94a7"
-  integrity sha512-ymDhDJqgpoqNkqy73BuYFbSKR0j9uJ8bMXtRcX4K+6uSqMSVHjRgRgPFGpKolNWshPX86C0Rqup+uguZehXBkg==
+  version "0.8.0-canary.19"
+  resolved "https://registry.yarnpkg.com/@codotype/core/-/core-0.8.0-canary.19.tgz#8650a1a802a97e993a7a382bfce59a4aac43c972"
+  integrity sha512-7k02IJFhZVjrWALG1jUzMDlv1mi0QdyjJCgUqpoMw1lV561WZWI77Aoa6obBAcxgP1pxILKSoZsQi3dD162ueA==
   dependencies:
     "@types/lodash" "^4.14.149"
     "@types/pluralize" "0.0.29"
