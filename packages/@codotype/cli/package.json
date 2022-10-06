@@ -37,7 +37,7 @@
     },
     "dependencies": {
         "@codotype/runtime": "^0.8.0-canary.12",
-        "@codotype/core": "0.8.0-canary.18",
+        "@codotype/core": "0.8.0-canary.19",
         "body-parser": "^1.19.0",
         "chalk": "^2.4.1",
         "commander": "^2.19.0",

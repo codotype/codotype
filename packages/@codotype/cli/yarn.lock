@@ -236,10 +236,10 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
-"@codotype/core@0.8.0-canary.18", "@codotype/core@^0.8.0-canary.18":
-  version "0.8.0-canary.18"
-  resolved "https://registry.yarnpkg.com/@codotype/core/-/core-0.8.0-canary.18.tgz#83389f9fa8b528f71c35e9048dcdf35fda2a94a7"
-  integrity sha512-ymDhDJqgpoqNkqy73BuYFbSKR0j9uJ8bMXtRcX4K+6uSqMSVHjRgRgPFGpKolNWshPX86C0Rqup+uguZehXBkg==
+"@codotype/core@0.8.0-canary.19", "@codotype/core@^0.8.0-canary.19":
+  version "0.8.0-canary.19"
+  resolved "https://registry.yarnpkg.com/@codotype/core/-/core-0.8.0-canary.19.tgz#8650a1a802a97e993a7a382bfce59a4aac43c972"
+  integrity sha512-7k02IJFhZVjrWALG1jUzMDlv1mi0QdyjJCgUqpoMw1lV561WZWI77Aoa6obBAcxgP1pxILKSoZsQi3dD162ueA==
   dependencies:
     "@types/lodash" "^4.14.149"
     "@types/pluralize" "0.0.29"
@@ -250,12 +250,12 @@
     underscore.string "^3.3.4"
     uuid "^8.0.0"
 
-"@codotype/runtime@^0.8.0-canary.11":
-  version "0.8.0-canary.12"
-  resolved "https://registry.yarnpkg.com/@codotype/runtime/-/runtime-0.8.0-canary.12.tgz#425ab75daba0077dc28269f4f4df086131314c5c"
-  integrity sha512-VssoIO5/gY6lW4eKXIeabIvQ05t6cu6ijDMtKgKDC3hWtRdad/VB8KWqYUUkpIZTe5J+8x9v7rTL8G6ebUie7w==
+"@codotype/runtime@^0.8.0-canary.12":
+  version "0.8.0-canary.13"
+  resolved "https://registry.yarnpkg.com/@codotype/runtime/-/runtime-0.8.0-canary.13.tgz#785ec911758927bb574edda75cf578decf85e0bc"
+  integrity sha512-RkMUHp3EpVNPyC4+F9dyXLk6+QoolVxUX0L1H6wmoJKvCYK/zbcLi7ZGVUP1bsQMvvSZOs0lO9l/H5v6OihY/A==
   dependencies:
-    "@codotype/core" "^0.8.0-canary.18"
+    "@codotype/core" "^0.8.0-canary.19"
     chalk "^2.4.1"
     ejs "^2.6.1"
     fs-extra "^7.0.1"
